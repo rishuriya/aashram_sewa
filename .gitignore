@@ -1,1 +1,5 @@
 /venv
+/aashram_sewa/db.sqlite3
+/aashram_sewa/user/migrations
+/aashram_sewa/user/__pycache__
+/aashram_sewa/aashram_sewa/__pycache__
