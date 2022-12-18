@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,23 +15,25 @@
 
     <title>Registration</title>
 </head>
+
 <body>
-    
-{% load bootstrap5 %}
-        <h1 class="d-flex justify-content-center pt-5">Form</h1>
-        <div class="container">
-            <div class="row my-5">
-                <div class="col-md-12">
-<form action = "" method = "post">
-    {% csrf_token %}
-    {% bootstrap_form form %}
-    {% buttons %}
-        <button type="submit" class="btn btn-primary">Submit</button>
-    {% endbuttons %}
-</form>
-</div>
-</div>
-</div>
+
+    {% load bootstrap5 %}
+    <h1 class="d-flex justify-content-center pt-5">Form</h1>
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-md-12">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    {% bootstrap_form form %}
+                    {% buttons %}
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    {% endbuttons %}
+                </form>
+            </div>
+        </div>
+    </div>
 
 </body>
+
 </html>
