@@ -1,10 +1,36 @@
-<html>
-    <body>
-        <h1>Form</h1>
-        
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load bootstrap5 %}
+
+    {% bootstrap_css %}
+
+    {% bootstrap_javascript %}
+
+    {% bootstrap_messages %}
+
+    <title>Registration</title>
+</head>
+<body>
+    
+{% load bootstrap5 %}
+        <h1 class="d-flex justify-content-center pt-5">Form</h1>
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-md-12">
 <form action = "" method = "post">
     {% csrf_token %}
-    {{form.as_p }}
-    <input type="submit" value=Submit">
+    {% bootstrap_form form %}
+    {% buttons %}
+        <button type="submit" class="btn btn-primary">Submit</button>
+    {% endbuttons %}
 </form>
+</div>
+</div>
+</div>
+
+</body>
 </html>
