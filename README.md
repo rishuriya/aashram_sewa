@@ -3,7 +3,7 @@
 Clone this repository, then do create the virtual environment and then run it<br>
 
 ```bash
-cd aashram/
+cd aashram_sewa/
 python3 pip -m venv <virtualenvname>
 source <virtualenvname>/bin/activate
 ```
